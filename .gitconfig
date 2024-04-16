@@ -1,0 +1,7 @@
+[user]
+	name = Jefferson Lacerda
+	email = 47826649+JeffersonSLacerda@users.noreply.github.com
+[pull]
+	rebase = true
+[init]
+	defautlBranch = main
