@@ -5,3 +5,5 @@
 	rebase = true
 [init]
 	defautlBranch = main
+[credential]
+	credentialStore = gpg
