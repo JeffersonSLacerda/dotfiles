@@ -101,6 +101,25 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Configuração condicional do workspace
+if [[ -d "/workspace" ]]; then
+    export WORKSPACE="/workspace"
+    cd $WORKSPACE
+fi
+
+# Carregamento seguro de plugins
+zsh_plugins=(
+    git
+    fzf
+)
+
+# Verifica e carrega apenas plugins instalados
+for plugin in "${zsh_plugins[@]}"; do
+    if [[ -d $ZSH_CUSTOM/plugins/$plugin || -d $ZSH/plugins/$plugin ]]; then
+        plugins+=($plugin)
+    fi
+done
+
 SPACESHIP_PROMPT_ORDER=(
   user          # Username section
   dir           # Current directory section
