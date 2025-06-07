@@ -13,7 +13,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 # Configuração básica do Zsh
 cp ./.zshrc ~
-sed -i '/^ZSH_THEME/c\ZSH_THEME="spaceship"' ~/.zshrc
+sed -i '/^ZSH_THEME/c\ZSH_THEME="refined"' ~/.zshrc
 
 # Configuração de fontes (execução em background)
 (
