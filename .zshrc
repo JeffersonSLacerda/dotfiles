@@ -106,6 +106,7 @@ plugins=(
     fzf
     zsh-syntax-highlighting
     zsh-autosuggestions
+    zsh-completions
 )
 
 # Carregamento seguro de plugins
@@ -114,6 +115,7 @@ zsh_plugins=(
     fzf
     zsh-syntax-highlighting
     zsh-autosuggestions
+    zsh-completions
 )
 
 # Verifica e carrega apenas plugins instalados
