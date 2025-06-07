@@ -101,6 +101,12 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+plugins=(
+    git
+    fzf
+    zsh-syntax-highlighting
+    zsh-autosuggestions
+)
 
 # Carregamento seguro de plugins
 zsh_plugins=(
