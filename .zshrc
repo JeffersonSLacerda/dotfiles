@@ -101,11 +101,6 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Configuração condicional do workspace
-if [[ -d "/workspace" ]]; then
-    export WORKSPACE="/workspace"
-    cd $WORKSPACE
-fi
 
 # Carregamento seguro de plugins
 zsh_plugins=(
