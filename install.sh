@@ -2,7 +2,7 @@
 set -e
 
 # Configurações básicas de shell
-cat ./.gitconfig >> ~/.gitconfig
+cat ./.gitconfig >> /home/node/.gitconfig
 
 # Instalação do Oh My Zsh
 RUNZSH=no CHSH=yes sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
