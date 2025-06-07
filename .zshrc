@@ -164,15 +164,15 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 
 
-JAVA_HOME=$(dirname $( readlink -f $(which java) ))
-JAVA_HOME=$(realpath "$JAVA_HOME"/../)
-export JAVA_HOME
+# JAVA_HOME=$(dirname $( readlink -f $(which java) ))
+# JAVA_HOME=$(realpath "$JAVA_HOME"/../)
+# xport JAVA_HOME
 
-export ANDROID_HOME=$HOME/Android
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/tools:$PATH
-export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/tools/bin:$PATH
-export PATH=$PATH:$ANDROID_HOME/platform-tools:$PATH
+# export ANDROID_HOME=$HOME/Android
+# export PATH=$PATH:$ANDROID_HOME/emulator
+# export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/tools:$PATH
+# export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/tools/bin:$PATH
+# export PATH=$PATH:$ANDROID_HOME/platform-tools:$PATH
 
 export WSL_HOST=$(tail -1 /etc/resolv.conf | cut -d' ' -f2)
 export ADB_SERVER_SOCKET=tcp:$WSL_HOST:5037
