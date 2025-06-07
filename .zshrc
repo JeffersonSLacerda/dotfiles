@@ -111,6 +111,8 @@ fi
 zsh_plugins=(
     git
     fzf
+    zsh-syntax-highlighting
+    zsh-autosuggestions
 )
 
 # Verifica e carrega apenas plugins instalados
@@ -166,13 +168,6 @@ zinit light zdharma/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git
-  zsh-syntax-highlighting
-  zsh-autosuggestions
-  fzf
-)
 
 JAVA_HOME=$(dirname $( readlink -f $(which java) ))
 JAVA_HOME=$(realpath "$JAVA_HOME"/../)
